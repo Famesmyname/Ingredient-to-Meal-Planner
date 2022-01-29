@@ -1,5 +1,7 @@
 # Ingredient-to-Meal-Planner
 
+## Link to Repo
+<https://github.com/Famesmyname/Ingredient-to-Meal-Planner>
 ## Created Using
 ```
 HTML
