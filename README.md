@@ -7,6 +7,7 @@
 HTML
 CSS
 JavaScript (& JQuery)
+MATERIALIZE
 
 ```
 ## User Story

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,19 +17,87 @@
 </head>
 
 <body>
+
     <header>
-        Header and Nav-bar goes here
+        <!-- Header and Nav-bar goes here below -->
+        <nav>
+            <div class="navbar-fixed">
+                <div class="nav-wrapper">
+                    <!-- Navbar with Logo and links on rise side -->
+                        <a href="#" class="brand-logo center">Logo</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#placeholder">Placeholder</a></li>
+                        <li><a href="#placeholder">Placeholder</a></li>
+                        <li><a href="#placeholder">Placeholder</a></li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
     </header>
 
-    <div>HERO image, JUMBOTRON, or RECIPE title goes here</div>
+    <div>
+      <!-- Ingredient Search and List goes here, once selected generate list-->
+      <!-- SEARCH input -->
+      <form>
+        <div class="input-field">
+        <input id="search" type="search" required>
+        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+        <i class="material-icons">close</i>
+        </div>
+      </form>
+    </div>
+  
+    <!-- HERO image, JUMBOTRON, or RECIPE title goes here below-->
+    <div class="row" id="container-search-ingredientList">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/sample-1.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content center">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+    </div>
 
-    <div>Ingredient list goes here</div>
+    <div id="OptionsRecipe">
+      <!-- Recipe Options goes here below -->
+    </div>
+    
+    <div id="ListRecipe">
+      <!-- Recipe list goes here, with image or link to relocate page -->
+    </div>
 
-    <div>CTA</div>
-
-    <footer>
-        Footer goes here
+<!-- Footer goes here  Below-->
+    <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2022 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!"></a>
+          </div>
+        </div>
     </footer>
+
 </body>
 
     <!-- Link to JavaScript libraries below -->
