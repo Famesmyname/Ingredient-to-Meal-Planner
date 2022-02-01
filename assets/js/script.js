@@ -1,4 +1,11 @@
+// Define all DOM elements here
+const testBtn = document.querySelector('.test-api')
+
+//API INFO HERE
 const APIKEY = '5f7f6407a3df426fb065f2211ab36e41'
+
+
+testBtn.addEventListener('click', getRecipe)
 
 
 function getRecipe() {
@@ -25,21 +32,6 @@ function showRecipes(data) {
     document.querySelector('.r1img').src = image;
     document.querySelector('.r1card-title').textContent = title;
     document.querySelector('.r1currentRecipeIngredient').textContent = usedIng;
-//     document.querySelector('.recipes').innerHTML = 
-// ` <div class="col s4">
-//     <div class="card r1">
-//       <div class="card-image waves-effect waves-block waves-light">
-//         <img class="activator" src="${image}">
-//       </div>
-//       <div class="card-content">
-//         <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-//         <p><a href="#">${title}</a></p>
-//       </div>
-//       <div class="card-reveal">
-//         <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-//         <p>${usedIng}</p>
-//       </div>
-//     </div>
-// </div>
-// `
+
 }
+
