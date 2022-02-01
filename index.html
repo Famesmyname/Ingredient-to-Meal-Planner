@@ -21,7 +21,7 @@
     <header>
         <!-- Header and Nav-bar goes here below -->
         <nav>
-            <div class="navbar-fixed">
+            <div class="navbar-fixed red accent-4">
                 <div class="nav-wrapper">
                     <!-- Navbar with Logo and links on rise side -->
                         <a href="#" class="brand-logo center">Logo</a>
@@ -40,7 +40,7 @@
       <!-- SEARCH input -->
       <form>
         <div class="input-field">
-        <input id="search" type="search" required>
+        <input class="orange lighten-3" id="search" type="search" required>
         <label class="label-icon" for="search"><i class="material-icons">search</i></label>
         <i class="material-icons">close</i>
         </div>
@@ -48,34 +48,38 @@
     </div>
   
     <!-- HERO image, JUMBOTRON, or RECIPE title goes here below-->
-    <div class="row" id="container-search-ingredientList">
-        <div class="col s12 m7">
+    <div class="container row col s12 m6" id="container-search-ingredientList">
+        <div class="col s12">
           <div class="card">
             <div class="card-image">
-              <img src="images/sample-1.jpg">
-              <span class="card-title">Card Title</span>
+              <img src="https://www.teahub.io/photos/full/6-63195_food-wallpaper-foods-wallpaper-hd.jpg">
+              <span class="card-title black">Card Title</span>
             </div>
             <div class="card-content center">
               <p>I am a very simple card. I am good at containing small bits of information.
               I am convenient because I require little markup to use effectively.</p>
             </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
           </div>
         </div>
     </div>
 
-    <div id="OptionsRecipe">
+    <div class="container row col s12 orange lighten-4" id="OptionsRecipe">
       <!-- Recipe Options goes here below -->
+      <div class="col s3 card">Placeholder</div>
+      <div class="col s3 card">Placeholder</div>
+      <div class="col s3 card">Placeholder</div>
+      <div class="col s3 card">Placeholder</div>
     </div>
     
-    <div id="ListRecipe">
+    <div class="container row col s12" id="ListRecipe">
       <!-- Recipe list goes here, with image or link to relocate page -->
+      <div class="black">
+        <p class="white-text">Here is a recipe</p>
+      </div>
     </div>
 
 <!-- Footer goes here  Below-->
-    <footer class="page-footer">
+    <footer class="page-footer red accent-4">
         <div class="container">
           <div class="row">
             <div class="col l6 s12">
@@ -83,10 +87,6 @@
               <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
             </div>
             <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Links</h5>
-              <ul>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              </ul>
             </div>
           </div>
         </div>
