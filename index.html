@@ -23,30 +23,59 @@
         <nav>
             <div class="navbar-fixed indigo lighten-4">
                 <div class="nav-wrapper">
+                  <div class="container">
                     <!-- Navbar with Logo and links on rise side -->
+                        <a href="#" class="brand-logo center">
+                          <img class="circle bottom-center" src= "assets/img/logo.png" width="50px" height="auto">
+                        </a>
+                        <a href="#" class="sidenav-trigger" data-target="slide-out">
+                          <i class="material-icons">Menu</i>
+                        </a>
 
                     <img class="brand-logo center circle hide-on-med-and-down" id="img-logo" src="./assets/img/logo.png" alt="Group Project Logo">
 
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="#placeholder">
+                        <li><a href="#homepage">
                           <img class="circle right btn-floating pulse" src="./assets/img/Homepage.png" width="50px" height="auto">
                           <i class="material-icons"></i>
                         </a>
                         </li>
 
-                        <li><a href="#placeholder">
+                        <li><a href="#ingredients">
                           <img class="circle right btn-floating pulse" src="./assets/img/Ingredients.png" width="50px" height="auto">
                         </a>
                         </li>
 
-                        <li><a href="#placeholder">
+                        <li><a href="#checklist">
                           <img class="circle right btn-floating pulse" src="./assets/img/Checklist.png" width="50px" height="auto">
                         </a>
                         </li>
                     </ul>
+                  </div>
                 </div>
             </div>
           </nav>
+
+          <!-- Sidenav (needs more editing on styling) -->
+            <ul id="slide-out" class="sidenav indigo lighten-4">
+              <li><a href="#homepage">
+                <img class="circle right btn-floating pulse" src="./assets/img/Homepage.png" width="50px" height="auto">
+                <i class="material-icons"></i>
+              </a>
+              </li>
+
+              <li><a href="#ingredients">
+                <img class="circle right btn-floating pulse" src="./assets/img/Ingredients.png" width="50px" height="auto">
+              </a>
+              </li>
+
+              <li><a href="#checklist">
+                <img class="circle right btn-floating pulse" src="./assets/img/Checklist.png" width="50px" height="auto">
+              </a>
+              </li>
+            </ul>
+
+
     </header>
 
     <div>
@@ -81,6 +110,7 @@
         </div>
     </div>
 
+    <div class="container row col s12 orange lighten-5" id="OptionsRecipe">
 
     <div class="container row col s12 blue">
       <!-- Recipe Options goes here below -->
@@ -150,5 +180,11 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
+
+    <!-- Sidenav Element -->
+    <script>
+      const slideMenu = document.querySelectorAll(".sidenav");
+      M.Sidenav.init(slideMenu, {});
+    </script>
 
 </html>
