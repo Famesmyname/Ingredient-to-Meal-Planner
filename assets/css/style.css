@@ -13,3 +13,11 @@ main {
   width: auto;
   object-fit: scale-down;
 }
+
+.recipe-card {
+  height: 30rem;
+}
+
+.card-title {
+  font-size: 1rem;
+}
