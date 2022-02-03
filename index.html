@@ -117,7 +117,7 @@
       <div class="col s12">Temporary Ingredient List for Testing</div>
       <div class="col l3 m6 s12 card ing1">Chicken</div>
       <div class="col l3 m6 s12 card ing2">Mushroom</div>
-      <div class="col l3 m6 s12 card ing3">Cheese</div>
+      <div class="col l3 m6 s12 card ing3">Shrimp</div>
       <div class="col l3 m6 s12 card ing4">Pasta</div>
       <button class="btn test-api s12 m4">Test API</button>
     </div>
@@ -130,12 +130,18 @@
           <div class="row">
             <div class="input-field col s6">
               <input placeholder="0" id="recipe-number" type="text" class="validate">
-              <label for="recipe_number">How Many Recipes to generate.</label>
+              <label for="recipe_number"># of Recipes to generate</label>
             </div>
-            <div class="input-field col s6">
-              <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-              <label for="">Placeholder</label>
+            <div class="switch">
+              <div>Show recipes using only my ingredients first?</div>
+              <label>
+                No
+                <input type="checkbox" class="myIngCheck" checked="checked">
+                <span class="lever"></span>
+                Yes
+              </label>
             </div>
+          
             </div>
           </div>
       <div class="col l3 m6 s12 card">Placeholder</div>
