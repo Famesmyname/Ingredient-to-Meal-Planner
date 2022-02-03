@@ -8,16 +8,22 @@ main {
   flex: 1 0 auto;
 }
 
-#img-logo {
-  height: 95%;
-  width: auto;
-  object-fit: scale-down;
-}
-
 .recipe-card {
   height: 30rem;
 }
 
 .card-title {
   font-size: 1rem;
+}
+
+/*  Sidenav */
+
+form, main, footer {
+  padding-left: 250px;
+}
+
+@media only screen and (max-width: 992px){
+  form, main, footer {
+    padding-left: 0;
+  }
 }
