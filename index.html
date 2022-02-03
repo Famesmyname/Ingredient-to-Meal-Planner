@@ -25,14 +25,11 @@
                 <div class="nav-wrapper">
                   <div class="container">
                     <!-- Navbar with Logo and links on rise side -->
-                        <a href="#" class="brand-logo center">
-                          <img class="circle bottom-center" src= "assets/img/logo.png" width="50px" height="auto">
-                        </a>
                         <a href="#" class="sidenav-trigger" data-target="slide-out">
                           <i class="material-icons">Menu</i>
                         </a>
 
-                    <img class="brand-logo center circle hide-on-med-and-down" id="img-logo" src="./assets/img/logo.png" alt="Group Project Logo">
+                    <img class="brand-logo center circle hide-on-med-and-down" src="./assets/img/logo.png" alt="Group Project Logo" width="auto" height="100%">
 
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li><a href="#homepage">
@@ -61,17 +58,17 @@
               <li><a href="#homepage">
                 <img class="circle right btn-floating pulse" src="./assets/img/Homepage.png" width="50px" height="auto">
                 <i class="material-icons"></i>
-              </a>
+                </a>
               </li>
 
               <li><a href="#ingredients">
                 <img class="circle right btn-floating pulse" src="./assets/img/Ingredients.png" width="50px" height="auto">
-              </a>
+                </a>
               </li>
 
               <li><a href="#checklist">
                 <img class="circle right btn-floating pulse" src="./assets/img/Checklist.png" width="50px" height="auto">
-              </a>
+                </a>
               </li>
             </ul>
 
@@ -138,18 +135,18 @@
       </div>
     </div>
       <div class="row recipes">
-        <div class="col s4 m8">
+        <div class="col s12">
           <div class="card r1">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="r1img activator" src="images/office.jpg" alt="A picture of generated recipe">
+              <img class="r1 img activator" src="images/office.jpg" alt="A picture of generated recipe">
             </div>
             <div class="card-content">
-              <span class="r1card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+              <span class="r1 card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
               <p><a href="#">This is a link</a></p>
             </div>
             <div class="card-reveal center">
-              <span class="r1card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p class="r1currentRecipeIngredient">Here is some more information about this product that is only revealed once clicked on.</p>
+              <span class="r1 card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p class="r1 currentRecipeIngredient">Here is some more information about this product that is only revealed once clicked on.</p>
             </div>
           </div>
       </div>
@@ -158,14 +155,6 @@
              
 <!-- Footer goes here  Below-->
     <footer class="page-footer indigo lighten-4">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Footer Content</h5>
-              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-            </div>
-          </div>
-        </div>
         <div class="footer-copyright">
           <div class="container center hide-on-small-and-down">
           © 2022 Copyright, Made with 🤍 by Edwin, Andrew, Rachel, Allyson, Sean
@@ -180,11 +169,5 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
-
-    <!-- Sidenav Element -->
-    <script>
-      const slideMenu = document.querySelectorAll(".sidenav");
-      M.Sidenav.init(slideMenu, {});
-    </script>
 
 </html>

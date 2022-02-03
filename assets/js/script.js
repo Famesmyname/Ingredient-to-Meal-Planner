@@ -35,3 +35,6 @@ function showRecipes(data) {
 
 }
 
+// Sidenav Element
+const slideMenu = document.querySelectorAll(".sidenav");
+M.Sidenav.init(slideMenu, {});
