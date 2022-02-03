@@ -21,27 +21,26 @@
   <!-- Ingredient Search and List goes here, once selected generate list-->
       <!-- SEARCH input -->
 
-      <form>
-        <div class="input-field">
+      
+          <form>
+            <div class="container row col s12 m10">
+              <div class="input-field">
 
-          <input class="orange lighten-3 center" id="search" type="search" required>
-
-          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-          <i class="material-icons">close</i>
-        </div>
-      </form>
+                <input class="indigo lighten-5" id="search" type="search" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </div>
+          </form>
 
     <header>
         <!-- Header and Nav-bar goes here below -->
-        <div class="sidebar">
+        <div class="nav-wrapper">
           <div class="row">
             <div class="container sidenav sidenav-fixed indigo lighten-4">
                     
               <!-- Navbar with Logo and links on rise side  -->
 
-              <button href="#" class="waves-effect right" id="menu">
-                <img class="circle btn-floating pulse sidenav-open sidenav-close" src="./assets/img/Menu.png" width="50px" height="auto">
-              </button>
                     <ul id="slide-out">
                       <li>
                         <div class="user-view">
@@ -51,23 +50,28 @@
                         </div>
                       </li>
 
-                      <li><a href="#homepage" class="waves-effect">
-                        <img class="circle btn-floating pulse" src="./assets/img/Homepage.png" width="50px" height="auto">
+                      <li><a href="#" class="waves-effect indigo-text text-lighten-5" id="menu">
+                          <img class="circle btn-floating pulse sidenav-open sidenav-close" src="./assets/img/Menu.png" width="50px" height="auto"> Menu
+                        </a>
+                      </li>
+
+                      <li><a href="#homepage" class="waves-effect indigo-text text-lighten-5">
+                        <img class="circle btn-floating pulse" src="./assets/img/Homepage.png" width="50px" height="auto"> Homepage
                       </a>
                       </li>
 
-                      <li><a href="#ingredients" class="waves-effect">
-                        <img class="circle btn-floating pulse" src="./assets/img/Ingredients.png" width="50px" height="auto">
+                      <li><a href="#ingredients" class="waves-effect indigo-text text-lighten-5">
+                        <img class="circle btn-floating pulse" src="./assets/img/Ingredients.png" width="50px" height="auto"> Ingredients
                       </a>
                       </li>
 
-                      <li><a href="#checklist" class="waves-effect">
-                        <img class="circle btn-floating pulse" src="./assets/img/Checklist.png" width="50px" height="auto">
+                      <li><a href="#recipes" class="waves-effect indigo-text text-lighten-5">
+                        <img class="circle btn-floating pulse" src="./assets/img/Recipes.png" width="50px" height="auto"> Recipes
                       </a>
                       </li>
 
                     </ul>
-                    <a href="#" data-target="slide-out" class="sidenav-trigger"></a>
+                    <li><a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons right"></i></a></li>
              </div>
           </div>
         </div>
@@ -84,7 +88,7 @@
                 <div class="card">
                   <div class="card-image">
                     <img src="https://www.teahub.io/photos/full/6-63195_food-wallpaper-foods-wallpaper-hd.jpg">
-                    <span class="card-title black">Card Title</span>
+                    <span class="card-title indigo lighten-1">Card Title</span>
                   </div>
                   <div class="card-content center">
                     <p>I am a very simple card. I am good at containing small bits of information.
@@ -96,7 +100,7 @@
 
           <div class="container row col s12 orange lighten-5" id="OptionsRecipe">
 
-          <div class="container row col s12 blue">
+          <div class="container row col s12 indigo lighten-4">
             <!-- Recipe Options goes here below -->
             <div class="col s12">Temporary Ingredient List for Testing</div>
             <div class="col l3 m6 s12 card ing1">Apples</div>
@@ -107,7 +111,7 @@
           </div>
 
 
-          <div class="container row col s12 orange lighten-4" id="OptionsRecipe">
+          <div class="container row col s12 orange lighten-5" id="OptionsRecipe">
             <!-- Recipe Options goes here below -->
             <div class="col l3 m6 s12 card">Placeholder</div>
             <div class="col l3 m6 s12 card">Placeholder</div>
@@ -117,11 +121,11 @@
         
           <div class="container row col s12" id="ListRecipe">
             <!-- Recipe list goes here, with image or link to relocate page -->
-            <div class="black">
+            <div class="indigo lighten-1">
               <p class="white-text">Here is a recipe</p>
             </div>
           </div>
-          <div class="row recipes">
+          <div class="row recipes" id="recipes">
             <div class="col s4 m8">
               <div class="card r1">
                 <div class="card-image waves-effect waves-block waves-light">
@@ -146,7 +150,7 @@
 
     <div class="container row col s12 orange lighten-5" id="OptionsRecipe">
 
-    <div class="container row col s12 blue">
+    <div class="container row col s12 indigo lighten-4">
       <!-- Recipe Options goes here below -->
       <div class="col s12">Temporary Ingredient List for Testing</div>
       <div class="col l3 m6 s12 card ing1">Chicken</div>
@@ -157,7 +161,7 @@
     </div>
 
 
-    <div class="container row col s12 orange lighten-4" id="OptionsRecipe">
+    <div class="container row col s12 orange lighten-5" id="OptionsRecipe">
       <!-- Recipe Options goes here below -->
       <div class="row">
         <form class="col s12">
@@ -231,7 +235,7 @@
     <!-- Sidenav Element -->
     <script>
       $(document).ready(function(){
-        $('.button-collapse').sideNav('show');
+        $('.slide-out').dropdown();
       });
 
     </script>
