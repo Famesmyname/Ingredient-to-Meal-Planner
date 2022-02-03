@@ -2,7 +2,7 @@
 const testBtn = document.querySelector('.test-api')
 const recipeResults = document.querySelector('.recipe-results')
 const recipeNumber = document.querySelector('#recipe-number')
-const myIngCheck = document.querySelector('.myIngCheck')
+// const myIngCheck = document.querySelector('.myIngCheck')
 
 //API INFO HERE
 const APIKEY = '5f7f6407a3df426fb065f2211ab36e41'
@@ -12,17 +12,17 @@ testBtn.addEventListener('click', getRecipe)
 
 function getRecipe() {
 
-    if (myIngCheck.checked){
-        var myIngRank = "&ranking=2"
-    }
-    else {var myIngRank = ""}
-    console.log(myIngRank)
+    // if (myIngCheck.checked){
+    //     var myIngRank = "&ranking=2"
+    // }
+    // else {var myIngRank = ""}
+    // console.log(myIngRank)
 
     var ingredients = document.querySelector('.ing1').innerText + "," + document.querySelector('.ing2').innerText + "," + document.querySelector('.ing3').innerText + ","  + document.querySelector('.ing4').innerText + ","
     console.log(ingredients)
     var recipeURL = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=`
     + ingredients 
-    + myIngRank
+    // + myIngRank
     + `&number=`
     + recipeNumber.value
     + `&ignorePantry&apiKey=`
@@ -61,14 +61,14 @@ function generateRecipe(data){
 }
 
 // Sidenav
-var instance = M.Sidenav.getInstance(elem);
-instance.open();
-instance.close();
+// var instance = M.Sidenav.getInstance(elem);
+// instance.open();
+// instance.close();
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-    var collapsibleElem = document.querySelector('.collapsible');
-    var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('.sidenav');
+//     var instances = M.Sidenav.init(elems, options);
+//     var collapsibleElem = document.querySelector('.collapsible');
+//     var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+// });
         
