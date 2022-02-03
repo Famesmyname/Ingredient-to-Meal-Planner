@@ -2,7 +2,7 @@
 const testBtn = document.querySelector('.test-api')
 const recipeResults = document.querySelector('.recipe-results')
 const recipeNumber = document.querySelector('#recipe-number')
-
+// const myIngCheck = document.querySelector('.myIngCheck')
 
 //API INFO HERE
 const APIKEY = '5f7f6407a3df426fb065f2211ab36e41'
@@ -11,13 +11,22 @@ const APIKEY = '5f7f6407a3df426fb065f2211ab36e41'
 testBtn.addEventListener('click', getRecipe)
 
 function getRecipe() {
-    var ingredient = document.querySelector('.ing1').innerText
+
+    // if (myIngCheck.checked){
+    //     var myIngRank = "&ranking=2"
+    // }
+    // else {var myIngRank = ""}
+    // console.log(myIngRank)
+
+    var ingredients = document.querySelector('.ing1').innerText + "," + document.querySelector('.ing2').innerText + "," + document.querySelector('.ing3').innerText + ","  + document.querySelector('.ing4').innerText + ","
+    console.log(ingredients)
     var recipeURL = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=`
-    + ingredient 
+    + ingredients 
+    // + myIngRank
     + `&number=`
     + recipeNumber.value
     + `&ignorePantry&apiKey=`
-    + APIKEY;
+    + APIKEY; 
 
     console.log(recipeURL)
     fetch(recipeURL)
@@ -31,17 +40,17 @@ function generateRecipe(data){
     data.map(result => {
         generatedRecipe += 
         `
-        <div class="col s3 s6">
+        <div class="col s6 m3 xl2">
         <div class="recipe-card card">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="img activator" src="${result.image}" alt="A picture of generated recipe">
           </div>
           <div class="card-content">
-            <span class="card card-title activator grey-text text-darken-4">${result.title}<i class="material-icons right"></i></span>
+            <span class="recipe-title card-title activator grey-text text-darken-4">${result.title}<i class="material-icons right"></i></span>
             <p><a href="#" data-recipe="${result.id}">Link to Recipe</a></p>
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">${result.title}<i class="material-icons right">X</i></span>
+            <span class="recipe-title card-title grey-text text-darken-4">${result.title}<i class="material-icons right">X</i></span>
             <p class="currentRecipeIngredient">Missing Ingredients: <span class="missingIng">${result.missedIngredientCount}</span></p>
           </div>
         </div>
