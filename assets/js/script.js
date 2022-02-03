@@ -1,9 +1,8 @@
 // Define all DOM elements here
 const testBtn = document.querySelector('.test-api')
-
+var ingredientSearchEl = document.querySelector('#searchBox')
 //API INFO HERE
 const APIKEY = '5f7f6407a3df426fb065f2211ab36e41'
-
 
 testBtn.addEventListener('click', getRecipe)
 
@@ -35,6 +34,15 @@ function showRecipes(data) {
 
 }
 
+function handleIngSearch () {
+    var ingredientVal = document.querySelector('#search-input');
+    console.log('submit button works')
+    console.log(ingredientVal);
+}
+
 // Sidenav Element
 const slideMenu = document.querySelectorAll(".sidenav");
 M.Sidenav.init(slideMenu, {});
+
+// event listeners
+ingredientSearchEl.addEventListener('submit', handleIngSearch);

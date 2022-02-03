@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Link to CSS below -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
+    <link rel="stylesheet" href="./assets/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- Link to third-party JavaScript per documentation below -->
@@ -25,9 +24,9 @@
                 <div class="nav-wrapper">
                   <div class="container">
                     <!-- Navbar with Logo and links on rise side -->
-                        <a href="#" class="sidenav-trigger" data-target="slide-out">
-                          <i class="material-icons">Menu</i>
-                        </a>
+                    <a href="#" class="sidenav-trigger" data-target="slide-out">
+                      <i class="material-icons">Menu</i>
+                    </a>
 
                     <img class="brand-logo center circle hide-on-med-and-down" src="./assets/img/logo.png" alt="Group Project Logo" width="auto" height="100%">
 
@@ -35,17 +34,17 @@
                         <li><a href="#homepage">
                           <img class="circle right btn-floating pulse" src="./assets/img/Homepage.png" width="50px" height="auto">
                           <i class="material-icons"></i>
-                        </a>
+                          </a>
                         </li>
 
                         <li><a href="#ingredients">
                           <img class="circle right btn-floating pulse" src="./assets/img/Ingredients.png" width="50px" height="auto">
-                        </a>
+                          </a>
                         </li>
 
                         <li><a href="#checklist">
                           <img class="circle right btn-floating pulse" src="./assets/img/Checklist.png" width="50px" height="auto">
-                        </a>
+                          </a>
                         </li>
                     </ul>
                   </div>
@@ -55,53 +54,49 @@
 
           <!-- Sidenav (needs more editing on styling) -->
             <ul id="slide-out" class="sidenav indigo lighten-4">
-              <li><a href="#homepage">
+              
+              <img class="circle" id="sidebar-logo" src="./assets/img/logo.png" alt="Group Project Logo" width="auto" height="100px">
+              
+              <li><a class="center-align" href="#homepage">Homepage
                 <img class="circle right btn-floating pulse" src="./assets/img/Homepage.png" width="50px" height="auto">
                 <i class="material-icons"></i>
                 </a>
               </li>
 
-              <li><a href="#ingredients">
+              <li><a class="center-align" href="#ingredients">Ingredients
                 <img class="circle right btn-floating pulse" src="./assets/img/Ingredients.png" width="50px" height="auto">
                 </a>
               </li>
 
-              <li><a href="#checklist">
+              <li><a class="center-align" href="#checklist">Checklist
                 <img class="circle right btn-floating pulse" src="./assets/img/Checklist.png" width="50px" height="auto">
                 </a>
               </li>
             </ul>
 
-
     </header>
 
-    <div>
-      <!-- Ingredient Search and List goes here, once selected generate list-->
+    <div class="container row center-align">
       <!-- SEARCH input -->
-
-
-      <form>
-        <div class="input-field">
-
-        <input class="orange lighten-3 center" id="search" type="search" required>
-
-        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-        <i class="material-icons">close</i>
+      <div class="col s12">
+        <div class="row valign-wrapper">
+          <form class="input-field inline col s12 valign-wrapper" id="searchBox">
+            <input class="center-align col s12 m12 l10" type="search" id="search-input" placeholder="Search for an ingredient..."><button class="col l2 m12 s12" id="submitBtn" type="submit" for="search-input">submit</button>
+          </form>
         </div>
-      </form>
+      </div>
+        
     </div>
   
     <!-- HERO image, JUMBOTRON, or RECIPE title goes here below-->
     <div class="container row col s12 m6" id="container-search-ingredientList">
         <div class="col s12">
           <div class="card">
-            <div class="card-image">
+            <div class="card-image hide-on-med-and-down">
               <img src="https://www.teahub.io/photos/full/6-63195_food-wallpaper-foods-wallpaper-hd.jpg">
-              <span class="card-title black">Card Title</span>
             </div>
-            <div class="card-content center">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+            <div class="card-content center hide-on-med-and-down">
+              <h4>Ingredient to Meal Planner</h4>
             </div>
           </div>
         </div>
@@ -134,40 +129,86 @@
         <p class="white-text">Here is a recipe</p>
       </div>
     </div>
-      <div class="row recipes">
-        <div class="col s12">
-          <div class="card r1">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="r1 img activator" src="images/office.jpg" alt="A picture of generated recipe">
-            </div>
-            <div class="card-content">
-              <span class="r1 card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">This is a link</a></p>
-            </div>
-            <div class="card-reveal center">
-              <span class="r1 card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p class="r1 currentRecipeIngredient">Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
+
+    <div class="row recipes">
+      <div class="col l3 m6 s12">
+        <div class="card r1">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="r1img activator" src="https://post.healthline.com/wp-content/uploads/2020/09/Do_Apples_Affect_Diabetes_and_Blood_Sugar_Levels-732x549-thumbnail-1-732x549.jpg" alt="A picture of generated recipe">
           </div>
+          <div class="card-content">
+            <span class="r1card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal center">
+            <span class="r1card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p class="r1currentRecipeIngredient">Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
       </div>
-      
-   </div> 
-             
-<!-- Footer goes here  Below-->
-    <footer class="page-footer indigo lighten-4">
-        <div class="footer-copyright">
-          <div class="container center hide-on-small-and-down">
-          © 2022 Copyright, Made with 🤍 by Edwin, Andrew, Rachel, Allyson, Sean
+
+      <div class="col l3 m6 s12">
+        <div class="card r1">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="r1img activator" src="https://post.healthline.com/wp-content/uploads/2020/09/Do_Apples_Affect_Diabetes_and_Blood_Sugar_Levels-732x549-thumbnail-1-732x549.jpg" alt="A picture of generated recipe">
           </div>
+          <div class="card-content">
+            <span class="r1card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal center">
+            <span class="r1card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p class="r1currentRecipeIngredient">Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col l3 m6 s12">
+        <div class="card r1">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="r1img activator" src="https://post.healthline.com/wp-content/uploads/2020/09/Do_Apples_Affect_Diabetes_and_Blood_Sugar_Levels-732x549-thumbnail-1-732x549.jpg" alt="A picture of generated recipe">
+          </div>
+          <div class="card-content">
+            <span class="r1card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal center">
+            <span class="r1card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p class="r1currentRecipeIngredient">Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col l3 m6 s12">
+        <div class="card r1">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="r1img activator" src="https://post.healthline.com/wp-content/uploads/2020/09/Do_Apples_Affect_Diabetes_and_Blood_Sugar_Levels-732x549-thumbnail-1-732x549.jpg" alt="A picture of generated recipe">
+          </div>
+          <div class="card-content">
+            <span class="r1card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal center">
+            <span class="r1card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p class="r1currentRecipeIngredient">Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+    
+    </div>         
+    <!-- Footer goes here  Below-->
+    <footer class="page-footer indigo lighten-4 center-align">
+        <div class="footer-copyright hide-on-small-and-down">
+          <h5 class="container hide-on-small-and-down">© 2022 Copyright, Made with 🤍 by Edwin, Andrew, Rachel, Allyson, Sean</h5>
         </div>
     </footer>
 
 </body>
 
     <!-- Link to JavaScript libraries below -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
+    <script src="./assets/js/materialize.min.js"></script>
+    <script src="./assets/js/jquery-3.6.0.js"></script>
+    <script src="./assets/js/jquery-ui.js"></script>
     <script src="./assets/js/script.js"></script>
 
 </html>

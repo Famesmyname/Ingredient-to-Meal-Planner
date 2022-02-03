@@ -7,3 +7,15 @@ body {
 main {
   flex: 1 0 auto;
 }
+
+#sidebar-logo {
+  margin: auto;
+}
+
+#searchBox {
+  display: inline;
+}
+
+#submitBtn {
+  margin-top: 15px;
+}
