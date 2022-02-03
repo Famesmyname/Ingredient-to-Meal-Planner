@@ -2,18 +2,69 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-color: whitesmoke;
 }
 
 main {
   flex: 1 0 auto;
 }
 
-.recipe-card {
-  height: 30rem;
+#img-logo {
+  height: 95%;
+  width: auto;
+  object-fit: scale-down;
 }
 
-.card-title {
-  font-size: 1rem;
+.fa {
+    display: flex; 
+    position: relative; 
+    margin-right: 9px;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    justify-content: center; 
+    text-decoration: none;
+    border-radius: 50%; 
+  }
+  
+  .fa:hover {
+    opacity: .7;
+  }
+  
+  /* Set a specific color for each brand */
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+      background: rgb(252, 85, 252);
+      color: white; 
+  }
+
+  /* Return button alignment */ 
+
+#returnBtn {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding-bottom: 20px; 
+}
+
+#ingredient {
+    height: 200px;
+    border: 3px solid rgb(247, 190, 85);
+}
+
+.recipe-card {
+  height: 30rem;
 }
 
 /*  Sidenav */
