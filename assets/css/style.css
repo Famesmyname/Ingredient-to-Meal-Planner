@@ -5,18 +5,18 @@ body {
 }
 
 main {
-  /* flex: 1 0 auto; */
-  left: 500px;
+  flex: 1 0 auto;
 }
-/* 
-#img-logo {
-  height: 95%;
-  width: auto;
-  object-fit: scale-down;
-<<<<<<< HEAD
-} */
 
-/* Sidenav */
+.recipe-card {
+  height: 30rem;
+}
+
+.card-title {
+  font-size: 1rem;
+}
+
+/*  Sidenav */
 
 form, main, footer {
   padding-left: 250px;
@@ -26,14 +26,4 @@ form, main, footer {
   form, main, footer {
     padding-left: 0;
   }
-=======
-}
-
-.recipe-card {
-  height: 30rem;
-}
-
-.card-title {
-  font-size: 1rem;
->>>>>>> refs/remotes/origin/main
 }

@@ -51,7 +51,6 @@ function generateRecipe(data){
     recipeResults.innerHTML = generatedRecipe;
 }
 
-<<<<<<< HEAD
 // Sidenav
 var instance = M.Sidenav.getInstance(elem);
 instance.open();
@@ -63,6 +62,4 @@ document.addEventListener('DOMContentLoaded', function() {
     var collapsibleElem = document.querySelector('.collapsible');
     var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
 });
-=======
         
->>>>>>> refs/remotes/origin/main
