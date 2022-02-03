@@ -15,8 +15,6 @@ main {
   object-fit: scale-down;
 }
 
-
-
 .fa {
     display: flex; 
     position: relative; 
@@ -63,4 +61,20 @@ main {
 #ingredient {
     height: 200px;
     border: 3px solid rgb(247, 190, 85);
+}
+
+.recipe-card {
+  height: 30rem;
+}
+
+/*  Sidenav */
+
+form, main, footer {
+  padding-left: 250px;
+}
+
+@media only screen and (max-width: 992px){
+  form, main, footer {
+    padding-left: 0;
+  }
 }
