@@ -13,6 +13,7 @@ main {
   height: 95%;
   width: auto;
   object-fit: scale-down;
+<<<<<<< HEAD
 } */
 
 /* Sidenav */
@@ -25,4 +26,14 @@ form, main, footer {
   form, main, footer {
     padding-left: 0;
   }
+=======
+}
+
+.recipe-card {
+  height: 30rem;
+}
+
+.card-title {
+  font-size: 1rem;
+>>>>>>> refs/remotes/origin/main
 }
