@@ -61,15 +61,10 @@ function generateRecipe(data){
 }
 
 // Sidenav
-<<<<<<< HEAD
 var instance = M.Sidenav.getInstance(elem);
 instance.open();
 instance.close();
-=======
-// var instance = M.Sidenav.getInstance(elem);
-// instance.open();
-// instance.close();
->>>>>>> refs/remotes/origin/allysonBranch
+
 
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
