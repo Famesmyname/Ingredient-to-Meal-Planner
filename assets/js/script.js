@@ -61,14 +61,15 @@ function generateRecipe(data){
 }
 
 // Sidenav
-// var instance = M.Sidenav.getInstance(elem);
-// instance.open();
-// instance.close();
+var instance = M.Sidenav.getInstance(elem);
+instance.open();
+instance.close();
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     var elems = document.querySelectorAll('.sidenav');
-//     var instances = M.Sidenav.init(elems, options);
-//     var collapsibleElem = document.querySelector('.collapsible');
-//     var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
-// });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, {});
+    // var collapsibleElem = document.querySelector('.collapsible');
+    // var collapsibleInstance = M.Collapsible.init(collapsibleElem, {});
+});
         
