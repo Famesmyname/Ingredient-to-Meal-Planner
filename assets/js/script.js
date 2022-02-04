@@ -60,11 +60,7 @@ function generateRecipe(data){
     recipeResults.innerHTML = generatedRecipe;
 }
 
-<<<<<<< HEAD
 // Sidenav
-=======
-Sidenav
->>>>>>> 927fb3253db5f6067c340114ed8d1b480ad0960b
 var instance = M.Sidenav.getInstance(elem);
 instance.open();
 instance.close();
