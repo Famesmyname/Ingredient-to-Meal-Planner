@@ -21,6 +21,7 @@
   <!-- Ingredient Search and List goes here, once selected generate list-->
       <!-- SEARCH input -->
 
+<<<<<<< HEAD
       
           <form>
             <div class="container row col s12 m10">
@@ -33,6 +34,8 @@
             </div>
           </form>
 
+=======
+>>>>>>> 927fb32 (cleaned up elements in index, added switch for recipes generation)
     <header>
         <!-- Header and Nav-bar goes here below -->
         <div class="nav-wrapper">
@@ -78,6 +81,15 @@
 
     </header>
 
+    <form>
+      <div class="input-field">
+
+        <input class="orange lighten-3 center" id="search" type="search" required>
+
+        <label class="label-icon" for="search"><i class="material-icons"></i></label>
+        <i class="material-icons">close</i>
+      </div>
+    </form>
 
     <main>
       <div class="container">
@@ -98,6 +110,7 @@
               </div>
           </div>
 
+<<<<<<< HEAD
           <div class="container row col s12 orange lighten-5" id="OptionsRecipe">
 
           <div class="container row col s12 indigo lighten-4">
@@ -139,6 +152,9 @@
 
           </div> 
         </div>
+=======
+      <div class="container row col s12 orange lighten-5" id="OptionsRecipe">
+>>>>>>> 927fb32 (cleaned up elements in index, added switch for recipes generation)
       </div>
     
       </div>
@@ -153,7 +169,7 @@
       <div class="col l3 m6 s12 card ing2">Mushroom</div>
       <div class="col l3 m6 s12 card ing3">Cheese</div>
       <div class="col l3 m6 s12 card ing4">Pasta</div>
-      <button class="btn test-api s12 m4">Test API</button>
+
     </div>
 
 
@@ -164,24 +180,25 @@
           <div class="row">
             <div class="input-field col s6">
               <input placeholder="0" id="recipe-number" type="text" class="validate">
-              <label for="recipe_number">How Many Recipes to generate.</label>
+              <label for="recipe-number">How Many Recipes to generate.</label>
             </div>
-            <div class="input-field col s6">
-              <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-              <label for="">Placeholder</label>
+            <label for="myIngCheck">Minimize Missing Ingredients</label>
+            <div class="switch">
+
+              <label>
+                Off
+                <input type="checkbox" class="myIngCheck" checked="checked">
+                <span class="lever"></span>
+                On
+              </label>
             </div>
             </div>
           </div>
-      <div class="col l3 m6 s12 card">Placeholder</div>
-      <div class="col l3 m6 s12 card">Placeholder</div>
-      <div class="col l3 m6 s12 card">Placeholder</div>
+          <button class="btn get-recipes s12 m4">Show me the Recipes!</button>
     </div>
     
     <div class="container row col s12" id="ListRecipe">
       <!-- Recipe list goes here, with image or link to relocate page -->
-      <div class="black">
-        <p class="white-text">Here is a recipe</p>
-      </div>
     </div>
       <div class="row recipe-results">
    </div> 
