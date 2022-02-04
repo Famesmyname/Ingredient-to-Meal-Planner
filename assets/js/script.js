@@ -60,28 +60,15 @@ function generateRecipe(data){
     recipeResults.innerHTML = generatedRecipe;
 }
 
-<<<<<<< HEAD
 // Sidenav
-=======
-Sidenav
->>>>>>> 927fb32 (cleaned up elements in index, added switch for recipes generation)
 var instance = M.Sidenav.getInstance(elem);
 instance.open();
 instance.close();
 
-<<<<<<< HEAD
-
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, {});
-    // var collapsibleElem = document.querySelector('.collapsible');
-    // var collapsibleInstance = M.Collapsible.init(collapsibleElem, {});
-=======
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, options);
     var collapsibleElem = document.querySelector('.collapsible');
     var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
->>>>>>> 927fb32 (cleaned up elements in index, added switch for recipes generation)
 });
         
