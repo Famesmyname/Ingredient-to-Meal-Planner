@@ -7,7 +7,9 @@ const ingredientInput = document.querySelector("#ing-text");
 const ingredientForm = document.querySelector("#ing-form");
 const ingredientList = document.querySelector("#ing-list");
 
+
 var ingredients = [];
+let recipeCode = ""
 
 //API INFO HERE
 // const APIKEY = '5f7f6407a3df426fb065f2211ab36e41'
@@ -109,11 +111,13 @@ function generateRecipe(data){
           </div>
           <div class="name-card card-content flow-text">
             <span class="recipe-title card-title flow-text activator grey-text text-darken-4"git>${result.title}<i class="material-icons right"></i></span>
-            <p class="recipe-link"><a class="recipe-link" "href="#" data-recipe="${result.id}">Link to Recipe</a></p>
+            <a class="recipe-link" target="_blank" href="./recipe.html" datarecipecode="${result.id}">Link to Recipe ( <span class="recipe-code">${result.id}</span>)</a>
           </div>
           <div class="name-card card-reveal flow-text">
             <span class="recipe-title flow-text card-title grey-text text-darken-4">${result.title}<i class="material-icons right">X</i></span>
             <h5 class="currentRecipeIngredient">Missing Ingredients: <span class="missingIng">${result.missedIngredientCount}</span></h5>
+            // <h6> Recipe Code: </h6>
+            // <h6 class="recipe-code">${result.id}</h6>
           </div>
         </div>
     </div>
@@ -121,6 +125,12 @@ function generateRecipe(data){
     })
     recipeResults.innerHTML = generatedRecipe;
 }
+
+document.querySelector('.recipe-results').addEventListener('click', function(event){
+    var element = event.target
+    recipeCode = element.getAttribute("datarecipecode")
+    console.log(recipeCode)
+})
 
 // Sidenav
 // var instance = M.Sidenav.getInstance(elem);
