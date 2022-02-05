@@ -1,5 +1,5 @@
 // Define all DOM elements here
-const getRecipeBtn = document.querySelector('#get-recipes')
+var getRecipeBtn = document.querySelector('#get-recipes')
 const recipeResults = document.querySelector('.recipe-results');
 const recipeNumber = document.querySelector('#recipe-number');
 const myIngCheck = document.querySelector('.myIngCheck');
@@ -15,10 +15,14 @@ var ingredients = [];
 
 
 // Event Listeners Here
-getRecipeBtn.addEventListener("click", function() {
-  console.log("Check button press")
-  getRecipe()
+
+getRecipeBtn.addEventListener("click", function(event) {
+  event.preventDefault();
+  console.log("Check button press");
+  getRecipe();
 })
+
+// getRecipeBtn.addEventListener("submit", console.log("check button"))
 
 ingredientList.addEventListener("click", function(event) {
     var element = event.target; 
