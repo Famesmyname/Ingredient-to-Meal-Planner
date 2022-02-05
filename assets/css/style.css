@@ -2,20 +2,87 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-color: whitesmoke;
 }
 
 main {
   flex: 1 0 auto;
 }
 
-#sidebar-logo {
-  margin: auto;
+#submitButton {
+  height: 65px;
+  width: 165px;
 }
 
-#searchBox {
-  display: inline;
+.fa {
+  display: flex; 
+  position: relative; 
+  margin-right: 9px;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  justify-content: center; 
+  text-decoration: none;
+  border-radius: 50%; 
 }
 
-#submitBtn {
-  margin-top: 15px;
+.black-border {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.fa:hover {
+  opacity: .7;
+}
+  
+/* Set a specific color for each brand */
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+    background: rgb(252, 85, 252);
+    color: white; 
+}
+
+/* Return button alignment */ 
+
+#returnBtn {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding-bottom: 20px; 
+}
+
+#ingredient {
+    height: 200px;
+    border: 3px solid rgb(247, 190, 85);
+}
+
+.recipe-card {
+  height: 25rem;
+}
+
+#copyright {
+  text-align: center;
+}
+
+/*  Sidenav */
+
+form, main, footer {
+  padding-left: 250px;
+}
+
+@media only screen and (max-width: 992px){
+  form, main, footer {
+    padding-left: 0;
+  }
 }
