@@ -20,35 +20,51 @@
 
 <body>
 
-  <header><!-- Header and Nav-bar goes here below -->
-    <div class="nav-wrapper">
-      <div class="row">
-        <div class="container sidenav sidenav-fixed indigo lighten-4"><!-- Navbar with Logo and links on right side  -->
-          <ul id="slide-out">
-            <li>
-              <div class="user-view">
-                <a href="#" class="brand-logo"><img class="hide-on-med-and-down" id="img-logo" src= "./assets/img/logo.png" alt="Group Project Logo" width="200px" height="auto"></a>
-              </div>
-            </li>
 
-            <li>
-              <a href="#" class="waves-effect indigo-text text-lighten-5" id="menu"><img class="circle btn-floating pulse sidenav-open sidenav-close" src="./assets/img/Menu.png" width="50px" height="auto"> Menu</a>
-            </li>
+  <!-- Ingredient Search and List goes here, once selected generate list-->
+      <!-- SEARCH input -->
 
-            <li>
-              <a href="#homepage" class="waves-effect indigo-text text-lighten-5"><img class="circle btn-floating pulse" src="./assets/img/Homepage.png" width="50px" height="auto"> Homepage</a>
-            </li>
+    <header class="col s2">
+        <!-- Header and Nav-bar goes here below -->
+        <div class="nav-wrapper">
+          <div class="row">
+            <div class="container sidenav sidenav-fixed indigo lighten-4">
+                    
+              <!-- Navbar with Logo and links on rise side  -->
 
-            <li>
-              <a href="#ingredients" class="waves-effect indigo-text text-lighten-5"><img class="circle btn-floating pulse" src="./assets/img/Ingredients.png" width="50px" height="auto"> Ingredients</a>
-            </li>
+                    <ul id="slide-out">
+                      <li>
+                        <div class="user-view">
+                          <a href="#" class="brand-logo">
+                            <img class="hide-on-med-and-down" id="img-logo" src= "./assets/img/logo.png" alt="Group Project Logo" width="200px" height="auto">
+                          </a>
+                        </div>
+                      </li>
 
-            <li>
-              <a href="#recipes" class="waves-effect indigo-text text-lighten-5"><img class="circle btn-floating pulse" src="./assets/img/Recipes.png" width="50px" height="auto"> Recipes</a>
-            </li>
+                      <li><a href="#" class="waves-effect indigo-text text-lighten-5" id="menu">
+                          <img class="circle btn-floating pulse sidenav-open sidenav-close" src="./assets/img/Menu.png" width="50px" height="auto"> Menu
+                        </a>
+                      </li>
 
-          </ul>
-          <li><a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons right"></i></a></li>
+                      <li><a href="#homepage" class="waves-effect indigo-text text-lighten-5">
+                        <img class="circle btn-floating pulse" src="./assets/img/Homepage.png" width="50px" height="auto"> Homepage
+                      </a>
+                      </li>
+
+                      <li><a href="./recipe.html" class="waves-effect indigo-text text-lighten-5">
+                        <img class="circle btn-floating pulse" src="./assets/img/Ingredients.png" width="50px" height="auto"> Ingredients
+                      </a>
+                      </li>
+
+                      <li><a href="#recipes" class="waves-effect indigo-text text-lighten-5">
+                        <img class="circle btn-floating pulse" src="./assets/img/Recipes.png" width="50px" height="auto"> Recipes
+                      </a>
+                      </li>
+
+                    </ul>
+                    <!-- <li><a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons right"></i></a></li> -->
+             </div>
+          </div>
         </div>
       </div>
     </div>
@@ -139,11 +155,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./assets/js/script.js"></script>
 
-    <!-- Sidenav Element -->
-    <!-- <script>
-      $(document).ready(function(){
-        $('.slide-out').dropdown();
-      });
-    </script>  -->
 
 </html>
