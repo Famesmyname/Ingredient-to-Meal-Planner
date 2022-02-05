@@ -178,4 +178,14 @@ data.tasteWidget
 data.nutritionWidget
 
 // Link to view recipe source url 
-data.sourceUrl
+// data.sourceUrl
+function getSource(id) {
+    $.ajax({
+        url:"https://api.spoonacular.com/recipes/"+id+"/information?&apiKey=5f7f6407a3df426fb065f2211ab36e41",
+        success: function(res){
+            document.getElementById("sourceUrl").innerHTML=res.sourceUrl
+            document.getElementbyId("sourceUrl").href=res.sourceUrl
+        }
+    }); 
+}
+
