@@ -80,6 +80,7 @@
       <div class="row">
         <form class="col s12" id="ing-form">
           <div class="row">
+            <h3 class="col s12">What ingredients do you have at home?</h3>
             <div class="input-field col s12">
               <input id="ing-text" type="text" class="ing-text">
               <label for="ing-text" id="ing-text">Enter Your Ingredient Here</label>
@@ -91,7 +92,8 @@
 
     <div class="container row col s12 pink darken-3">
       <h3 class="col s12 white-text">Your Ingredients</h3>
-      <ul class="row white-text ing-list" id="ing-list">
+      <h6 class="red-text text-lighten-3">Click on an ingredient to remove from the list</h6>
+      <ul class="row grey-text text-lighten-2 ing-list" id="ing-list">
       </ul>
     </div>
 
@@ -117,7 +119,7 @@
             </div>
             </div>
           </div>
-          <button class="btn get-recipes s12 m4">Show me the Recipes!</button>
+          <button class="btn s12 m4" id="get-recipes">Show me the Recipes!</button>
     </div>
     
     <div class="container row col s12" id="ListRecipe">
@@ -156,11 +158,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./assets/js/script.js"></script>
 
-    <!-- Sidenav Element
+    <!-- Sidenav Element -->
     <script>
       $(document).ready(function(){
         $('.slide-out').dropdown();
       });
-    </script>  -->
+    </script> 
 
 </html>

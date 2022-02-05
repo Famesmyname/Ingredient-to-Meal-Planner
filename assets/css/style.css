@@ -20,6 +20,12 @@ font-size: 20px;
 padding-left: 1rem;
 }
 
+.ing-item:hover {
+  cursor: pointer;
+  color:aliceblue;
+
+}
+
 .fa {
     display: flex; 
     position: relative; 
@@ -72,13 +78,17 @@ padding-left: 1rem;
     border: 3px solid rgb(247, 190, 85);
 }
 
+.name-card {
+  padding: 10px !important;
+}
+
 .recipe-card {
    height: 20rem;
    border-radius: 10px;
 }
 
 .recipe-title {
-  font-size: 20px;
+  font-size: 20px !important;
 }
 
 .recipe-link {
