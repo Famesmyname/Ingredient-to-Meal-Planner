@@ -111,7 +111,7 @@ function generateRecipe(data){
           </div>
           <div class="name-card card-content flow-text">
             <span class="recipe-title card-title flow-text activator grey-text text-darken-4"git>${result.title}<i class="material-icons right"></i></span>
-            <a class="recipe-link" target="_blank" href="./recipe.html" datarecipecode="${result.id}">Link to Recipe ( <span class="recipe-code">${result.id}</span>)</a>
+            <a class="recipe-link" target="_blank" href="./recipe.html" datarecipecode="${result.id}">Link to Recipe</a>
           </div>
           <div class="name-card card-reveal flow-text">
             <span class="recipe-title flow-text card-title grey-text text-darken-4">${result.title}<i class="material-icons right">X</i></span>
