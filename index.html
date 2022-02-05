@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ingredient to Recipe Planner</title>
     <!-- Link to CSS below -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- Link to third-party JavaScript per documentation below -->
@@ -16,24 +18,12 @@
 
 </head>
 
-<body>
+<body class="row">
 
   <!-- Ingredient Search and List goes here, once selected generate list-->
       <!-- SEARCH input -->
 
-      
-          <form>
-            <div class="container row col s12 m10">
-              <div class="input-field">
-
-                <input class="indigo lighten-5" id="search" type="search" required>
-                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                <i class="material-icons">close</i>
-              </div>
-            </div>
-          </form>
-
-    <header>
+    <header class="col s2">
         <!-- Header and Nav-bar goes here below -->
         <div class="nav-wrapper">
           <div class="row">
@@ -45,7 +35,7 @@
                       <li>
                         <div class="user-view">
                           <a href="#" class="brand-logo">
-                            <img class="hide-on-med-and-down" id="img-logo" src= "./assets/img/logo.png" alt="Group Project Logo" width="240px" height="auto">
+                            <img class="hide-on-med-and-down" id="img-logo" src= "./assets/img/logo.png" alt="Group Project Logo" width="200px" height="auto">
                           </a>
                         </div>
                       </li>
@@ -79,81 +69,32 @@
     </header>
 
 
-    <main>
+    <main class="col s10">
       <div class="container">
         <div class="row">
           <!-- HERO image, JUMBOTRON, or RECIPE title goes here below-->
           <div class="container row col s12 m6" id="container-search-ingredientList">
-              <div class="col s12">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="https://www.teahub.io/photos/full/6-63195_food-wallpaper-foods-wallpaper-hd.jpg">
-                    <span class="card-title indigo lighten-1">Card Title</span>
-                  </div>
-                  <div class="card-content center">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
-                  </div>
-                </div>
-              </div>
           </div>
 
-          <div class="container row col s12 orange lighten-5" id="OptionsRecipe">
-
-          <div class="container row col s12 indigo lighten-4">
-            <!-- Recipe Options goes here below -->
-
-            <div class="col s12">Temporary Ingredient List for Testing</div>
-            <div class="col l3 m6 s12 card ing1">Apples</div>
-            <div class="col l3 m6 s12 card ing2">Placeholder</div>
-            <div class="col l3 m6 s12 card">Placeholder</div>
-            <div class="col l3 m6 s12 card">Placeholder</div>
-            <button class="btn test-api s12 m4">Test API</button>
-          </div>
-
-          <div class="container row col s12" id="ListRecipe">
-            <!-- Recipe list goes here, with image or link to relocate page -->
-            <div class="indigo lighten-1">
-              <p class="white-text">Here is a recipe</p>
+    <div class="container row col s12 teal lighten-5" id="OptionsRecipe">
+      <div class="row">
+        <form class="col s12" id="ing-form">
+          <div class="row">
+            <h3 class="col s12">What ingredients do you have at home?</h3>
+            <div class="input-field col s12">
+              <input id="ing-text" type="text" class="ing-text">
+              <label for="ing-text" id="ing-text">Enter Your Ingredient Here</label>
             </div>
           </div>
-
-          <div class="row recipes" id="recipes">
-            <div class="col s4 m8">
-              <div class="card r1">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="r1img activator" src="images/office.jpg" alt="A picture of generated recipe">
-                </div>
-                <div class="card-content">
-                  <span class="r1card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                  <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal center">
-                  <span class="r1card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                  <p class="r1currentRecipeIngredient">Here is some more information about this product that is only revealed once clicked on.</p>
-                </div>
-              </div>
-            </div>
-
-          <div class="row recipes">
-
-          </div> 
-        </div>
+        </form>
       </div>
-    
       </div>
-    </div>
 
-    <div class="container row col s12 orange lighten-5" id="OptionsRecipe">
-
-    <div class="container row col s12 indigo lighten-4">
-      <!-- Recipe Options goes here below -->
-      <div class="col s12">Temporary Ingredient List for Testing</div>
-      <div class="col l3 m6 s12 card ing1">Chicken</div>
-      <div class="col l3 m6 s12 card ing2">Mushroom</div>
-      <div class="col l3 m6 s12 card ing3">Cheese</div>
-      <div class="col l3 m6 s12 card ing4">Pasta</div>
-      <button class="btn test-api s12 m4">Test API</button>
+    <div class="container row col s12 pink darken-3">
+      <h3 class="col s12 white-text">Your Ingredients</h3>
+      <h6 class="red-text text-lighten-3">Click on an ingredient to remove from the list</h6>
+      <ul class="row grey-text text-lighten-2 ing-list" id="ing-list">
+      </ul>
     </div>
 
 
@@ -164,24 +105,25 @@
           <div class="row">
             <div class="input-field col s6">
               <input placeholder="0" id="recipe-number" type="text" class="validate">
-              <label for="recipe_number">How Many Recipes to generate.</label>
+              <label for="recipe-number">How Many Recipes to generate.</label>
             </div>
-            <div class="input-field col s6">
-              <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-              <label for="">Placeholder</label>
+            <label for="myIngCheck">Minimize Missing Ingredients</label>
+            <div class="switch">
+
+              <label>
+                Off
+                <input type="checkbox" class="myIngCheck" checked="checked">
+                <span class="lever"></span>
+                On
+              </label>
             </div>
             </div>
           </div>
-      <div class="col l3 m6 s12 card">Placeholder</div>
-      <div class="col l3 m6 s12 card">Placeholder</div>
-      <div class="col l3 m6 s12 card">Placeholder</div>
+          <button class="btn s12 m4" id="get-recipes" type="submit">Show me the Recipes!</button>
     </div>
     
     <div class="container row col s12" id="ListRecipe">
       <!-- Recipe list goes here, with image or link to relocate page -->
-      <div class="black">
-        <p class="white-text">Here is a recipe</p>
-      </div>
     </div>
       <div class="row recipe-results">
    </div> 
@@ -211,13 +153,13 @@
 </body>
 
     <!-- Link to JavaScript libraries below -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./assets/js/script.js"></script>
 
-    <!-- Sidenav Element
-    <script>
+    <!-- Sidenav Element -->
+    <!-- <script>
       $(document).ready(function(){
         $('.slide-out').dropdown();
       });

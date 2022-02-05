@@ -1,12 +1,29 @@
+* {
+  padding:0;
+  margin:0;
+}
+
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
     background-color: whitesmoke;
+    font-family: 'Darker Grotesque', sans-serif;
 }
 
 main {
   flex: 1 0 auto;
+}
+
+.ing-list li {
+font-size: 20px;
+padding-left: 1rem;
+}
+
+.ing-item:hover {
+  cursor: pointer;
+  color:aliceblue;
+
 }
 
 .fa {
@@ -22,6 +39,10 @@ main {
     border-radius: 50%; 
   }
   
+  #img-logo {
+    object-fit: fill;
+  }
+
   .fa:hover {
     opacity: .7;
   }
@@ -57,18 +78,36 @@ main {
     border: 3px solid rgb(247, 190, 85);
 }
 
-.recipe-card {
-  height: 25rem;
+.name-card {
+  padding: 10px !important;
 }
 
+.recipe-card {
+   height: 20rem;
+   border-radius: 10px;
+}
+
+.recipe-title {
+  font-size: 20px !important;
+}
+
+.recipe-link {
+  font-size: 1rem;
+}
+
+.img-adjust {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  overflow: hidden;
+}
 
 /*  Sidenav */
 
-form, main, footer {
-  padding-left: 250px;
+main, footer {
+  padding-left: 100px;
 }
 
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 820px){
   form, main, footer {
     padding-left: 0;
   }
