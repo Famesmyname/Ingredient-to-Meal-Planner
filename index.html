@@ -18,7 +18,8 @@
 
 </head>
 
-<body class="row">
+<body>
+
 
   <!-- Ingredient Search and List goes here, once selected generate list-->
       <!-- SEARCH input -->
@@ -65,51 +66,51 @@
              </div>
           </div>
         </div>
+      </div>
+    </div>
+  </header>
 
-    </header>
+  <main>
 
-
-    <main class="col s10">
-      <div class="container">
-        <div class="row">
-          <!-- HERO image, JUMBOTRON, or RECIPE title goes here below-->
-          <div class="container row col s12 m6" id="container-search-ingredientList">
-          </div>
-
-    <div class="container row col s12 teal lighten-5" id="OptionsRecipe">
+    <!-- Search/Type in ingredients for list generation -->
+    <div class="container teal lighten-5 center-align" id="OptionsRecipe">
       <div class="row">
-        <form class="col s12" id="ing-form">
-          <div class="row">
-            <h3 class="col s12">What ingredients do you have at home?</h3>
-            <div class="input-field col s12">
-              <input id="ing-text" type="text" class="ing-text">
-              <label for="ing-text" id="ing-text">Enter Your Ingredient Here</label>
-            </div>
+        <form id="ing-form">
+          <h3 class="col s12 m6">What ingredients do you have at home?</h3>
+          <div class="input-field col s12 m6">
+            <input id="ing-text" type="text" class="ing-text">
+            <label for="ing-text" id="ing-text">Enter Your Ingredient Here</label>
           </div>
         </form>
       </div>
-      </div>
-
-    <div class="container row col s12 pink darken-3">
-      <h3 class="col s12 white-text">Your Ingredients</h3>
-      <h6 class="red-text text-lighten-3">Click on an ingredient to remove from the list</h6>
-      <ul class="row grey-text text-lighten-2 ing-list" id="ing-list">
-      </ul>
     </div>
 
-
-    <div class="container row col s12 orange lighten-5" id="OptionsRecipe">
-      <!-- Recipe Options goes here below -->
+    <!-- List of ingredients generated via JavaScript from search input -->
+    <div class="container pink darken-3 center">
       <div class="row">
-        <form class="col s12">
+        <h3 class="white-text">Your Ingredients</h3>
+        <h6 class="red-text text-lighten-4">Click on an ingredient to remove from the list</h6>
+      </div>
+      
+      <div class="row">
+        <ul class="grey-text text-lighten-2 ing-list" id="ing-list">
+
+        </ul>
+      </div>
+    </div>
+
+    <!-- Recipe Options goes here below -->
+    <div class="container orange lighten-5 center" id="OptionsRecipe">
+      <div class="row">
+        <form>
           <div class="row">
-            <div class="input-field col s6">
-              <input placeholder="0" id="recipe-number" type="text" class="validate">
+            <div class="input-field col s12 m6">
+              <input placeholder="0" id="recipe-number" type="text" class="validate center">
               <label for="recipe-number">How Many Recipes to generate.</label>
             </div>
-            <label for="myIngCheck">Minimize Missing Ingredients</label>
-            <div class="switch">
 
+            <label class="switch s12 m6" for="myIngCheck">Minimize Missing Ingredients</label>
+            <div class="switch s12 m6">
               <label>
                 Off
                 <input type="checkbox" class="myIngCheck" checked="checked">
@@ -117,38 +118,34 @@
                 On
               </label>
             </div>
-            </div>
           </div>
-          <button class="btn s12 m4" id="get-recipes" type="submit">Show me the Recipes!</button>
+        </form>
+        <button class="btn s12 m4" id="get-recipes" type="submit">Show me the Recipes!</button>
+      </div>
     </div>
-    
-    <div class="container row col s12" id="ListRecipe">
-      <!-- Recipe list goes here, with image or link to relocate page -->
-    </div>
-      <div class="row recipe-results">
-   </div> 
-         
+
+    <!-- Recipe list goes here, with image or link to relocate page -->
+    <div class="container row col s12 center" id="ListRecipe"></div>
+    <div class="container row center recipe-results"></div> 
+
   </main>
-<!-- Footer goes here  Below-->
-    <footer class="page-footer indigo lighten-4">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Footer Content</h5>
-              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              <div clas="right hide-on-med-and-down"><a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                </div>
-            </div>
+
+  <!-- Footer goes here  Below-->
+  <footer class="center-align indigo lighten-4">
+      <div class="row">
+        <div class="col s12">
+          <div clas="right hide-on-med-and-down">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
           </div>
         </div>
-        <div class="footer-copyright">
-          <div class="container center hide-on-small-and-down">
-          © 2022 Copyright, Made with 🤍 by Edwin, Andrew, Rachel, Allyson, Sean
-          </div>
-        </div>
-    </footer>
+      </div>
+
+      <div class="center-align indigo lighten-3">
+        <p class="hide-on-small-and-down">© 2022 Copyright, Made with 🤍 by Edwin, Andrew, Rachel, Allyson, Sean</p>
+      </div>
+  </footer>
 
 </body>
 
