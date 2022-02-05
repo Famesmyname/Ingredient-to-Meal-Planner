@@ -73,9 +73,14 @@ padding-left: 1rem;
     padding-bottom: 20px; 
 }
 
-#ingredient {
+#ingredients {
     height: 200px;
     border: 3px solid rgb(247, 190, 85);
+}
+
+#taste-descrip {
+    height: 100px;
+    border: 3px solid rgb(247, 190, 85); 
 }
 
 .name-card {
