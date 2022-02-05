@@ -7,7 +7,9 @@ const ingredientInput = document.querySelector("#ing-text");
 const ingredientForm = document.querySelector("#ing-form");
 const ingredientList = document.querySelector("#ing-list");
 
+
 var ingredients = [];
+let recipeCode = ""
 
 //API INFO HERE
 // const APIKEY = '5f7f6407a3df426fb065f2211ab36e41'
@@ -109,11 +111,13 @@ function generateRecipe(data){
           </div>
           <div class="name-card card-content flow-text">
             <span class="recipe-title card-title flow-text activator grey-text text-darken-4"git>${result.title}<i class="material-icons right"></i></span>
-            <p class="recipe-link"><a class="recipe-link" "href="#" data-recipe="${result.id}">Link to Recipe</a></p>
+            <a class="recipe-link" target="_blank" href="./recipe.html" datarecipecode="${result.id}">Link to Recipe</a>
           </div>
           <div class="name-card card-reveal flow-text">
             <span class="recipe-title flow-text card-title grey-text text-darken-4">${result.title}<i class="material-icons right">X</i></span>
             <h5 class="currentRecipeIngredient">Missing Ingredients: <span class="missingIng">${result.missedIngredientCount}</span></h5>
+            // <h6> Recipe Code: </h6>
+            // <h6 class="recipe-code">${result.id}</h6>
           </div>
         </div>
     </div>
@@ -121,6 +125,12 @@ function generateRecipe(data){
     })
     recipeResults.innerHTML = generatedRecipe;
 }
+
+document.querySelector('.recipe-results').addEventListener('click', function(event){
+    var element = event.target
+    recipeCode = element.getAttribute("datarecipecode")
+    console.log(recipeCode)
+})
 
 // Sidenav
 // var instance = M.Sidenav.getInstance(elem);
@@ -135,57 +145,3 @@ function generateRecipe(data){
 // });
         
 init()
-
-
-
-
-/// JAVASCRIPT FOR RECIPE.HTML
-
-// Define all DOM elements here
-var getReturnBtn = document.querySelector('#returnBtn')
-const choiceRecipe = document.querySelector('#recipe-choice');
-const myIngredients = document.querySelector('#ingredients');
-const myTasteDescrip = document.querySelector('#taste-descrip');
-const myNutrition = document.querySelector("#nutritionFacts");
-const sourceUrl = document.querySelector('#sourceUrl'); 
-
-var recipes = [];
-
-
-// ?&apiKey=5f7f6407a3df426fb065f2211ab36e41
-
-
-// Event Listeners Here
-
-getReturnBtn.addEventListener("click", function(event) {
-  event.preventDefault();
-  window.history.go(-1); 
-  console.log("Check home button");
-  // close out html, return to main index 
-})
-
-
-// Image of recipe
-data.image 
-
-// Full ingredients by ID
-data.ingredientWidget
-
-// Taste description (i.e. sweet, spicy, bitter)
-data.tasteWidget
-
-// Nutrition facts by ID
-data.nutritionWidget
-
-// Link to view recipe source url 
-// data.sourceUrl
-function getSource(id) {
-    $.ajax({
-        url:"https://api.spoonacular.com/recipes/"+id+"/information?&apiKey=5f7f6407a3df426fb065f2211ab36e41",
-        success: function(res){
-            document.getElementById("sourceUrl").innerHTML=res.sourceUrl
-            document.getElementbyId("sourceUrl").href=res.sourceUrl
-        }
-    }); 
-}
-
