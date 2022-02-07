@@ -4,15 +4,19 @@
 }
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    background-color: whitesmoke;
-    font-family: 'Darker Grotesque', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: whitesmoke;
+  background-image: url("https://www.themississaugafoodbank.org/wp-content/uploads/2017/06/hero-image@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Darker Grotesque', sans-serif;
 }
 
 main {
   flex: 1 0 auto;
+  padding-top: 25px;
 }
 
 .ing-list li {
@@ -106,14 +110,20 @@ padding-left: 1rem;
   overflow: hidden;
 }
 
-/*  Sidenav */
+/* rounded corners */
+.rcorners {
+  border-radius: 25px;
+  padding: 5px;
+  border: black 1px solid;
+}
 
-main, footer {
+/*  Sidenav */
+main {
   padding-left: 100px;
 }
 
-@media only screen and (max-width: 820px){
-  form, main, footer {
+@media only screen and (max-width: 992px){
+  form, main {
     padding-left: 0;
   }
 }
