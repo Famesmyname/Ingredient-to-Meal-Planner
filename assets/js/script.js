@@ -132,7 +132,6 @@ function generateRecipe(data){
 document.querySelector('.recipe-results').addEventListener('click', function(event){
     var element = event.target
     recipeCode = element.getAttribute("datarecipecode")
-    console.log(recipeCode)
     localStorage.setItem("recipeCode", JSON.stringify(recipeCode));
 })
 
