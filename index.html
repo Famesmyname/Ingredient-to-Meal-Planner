@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,144 +16,132 @@
     <!-- Link to third-party JavaScript per documentation below -->
     <script src="https://kit.fontawesome.com/11d34b61cd.js" crossorigin="anonymous"></script>
 
-</head>
+  </head>
 
-<body>
-
-
-  <!-- Ingredient Search and List goes here, once selected generate list-->
-      <!-- SEARCH input -->
+  <body>
 
     <header class="col s2">
-        <!-- Header and Nav-bar goes here below -->
-        <div class="nav-wrapper">
-          <div class="row">
-            <div class="container sidenav sidenav-fixed indigo lighten-4">
-                    
-              <!-- Navbar with Logo and links on rise side  -->
+      <!-- Header and Nav-bar goes here below -->
+      <div class="nav-wrapper">
+        <div class="row">
+          <div class="container sidenav sidenav-fixed indigo darken-4 z-depth-5">
+            <!-- Navbar with Logo and links on rise side  -->
+            <ul id="slide-out">
+              <li>
+                <div class="user-view center">
+                  <a href="#" class="brand-logo z-depth-4 rcorners"><img class="hide-on-med-and-down rcorners" id="img-logo" src= "./assets/img/logo.png" alt="Group Project Logo" width="200px" height="auto"></a>
+                </div>
+              </li>
 
-                    <ul id="slide-out">
-                      <li>
-                        <div class="user-view">
-                          <a href="#" class="brand-logo">
-                            <img class="hide-on-med-and-down" id="img-logo" src= "./assets/img/logo.png" alt="Group Project Logo" width="200px" height="auto">
-                          </a>
-                        </div>
-                      </li>
+              <li class="divider"></li>
 
-                      <li><a href="#" class="waves-effect indigo-text text-lighten-5" id="menu">
-                          <img class="circle btn-floating pulse sidenav-open sidenav-close" src="./assets/img/Menu.png" width="50px" height="auto"> Menu
-                        </a>
-                      </li>
+              <li>
+                <a href="#" class="waves-effect indigo-text text-lighten-5 z-depth-1" id="menu"><img class="circle btn-floating pulse sidenav-open sidenav-close" src="./assets/img/Menu.png" width="50px" height="auto"> Menu</a>
+              </li>
 
-                      <li><a href="#homepage" class="waves-effect indigo-text text-lighten-5">
-                        <img class="circle btn-floating pulse" src="./assets/img/Homepage.png" width="50px" height="auto"> Homepage
-                      </a>
-                      </li>
+              <li>
+                <a href="#homepage" class="waves-effect indigo-text text-lighten-5 z-depth-1"><img class="circle btn-floating pulse" src="./assets/img/Homepage.png" width="50px" height="auto"> Homepage</a>
+              </li>
 
-                      <li><a href="./recipe.html" class="waves-effect indigo-text text-lighten-5">
-                        <img class="circle btn-floating pulse" src="./assets/img/Ingredients.png" width="50px" height="auto"> Ingredients
-                      </a>
-                      </li>
+              <li>
+                <a href="./recipe.html" class="waves-effect indigo-text text-lighten-5 z-depth-1"><img class="circle btn-floating pulse" src="./assets/img/Ingredients.png" width="50px" height="auto"> Ingredients</a>
+              </li>
 
-                      <li><a href="#recipes" class="waves-effect indigo-text text-lighten-5">
-                        <img class="circle btn-floating pulse" src="./assets/img/Recipes.png" width="50px" height="auto"> Recipes
-                      </a>
-                      </li>
+              <li>
+                <a href="#recipes" class="waves-effect indigo-text text-lighten-5 z-depth-1"><img class="circle btn-floating pulse" src="./assets/img/Recipes.png" width="50px" height="auto"> Recipes</a>
+              </li>
+            </ul>
+            <!-- <li><a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons right"></i></a></li> -->
 
-                    </ul>
-                    <!-- <li><a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons right"></i></a></li> -->
-             </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
+    <main>
 
-    <!-- Search/Type in ingredients for list generation -->
-    <div class="container teal lighten-5 center-align" id="OptionsRecipe">
-      <div class="row">
-        <form id="ing-form">
-          <h3 class="col s12 m6">What ingredients do you have at home?</h3>
-          <div class="input-field col s12 m6">
-            <input id="ing-text" type="text" class="ing-text">
-            <label for="ing-text" id="ing-text">Enter Your Ingredient Here</label>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <!-- List of ingredients generated via JavaScript from search input -->
-    <div class="container pink darken-3 center">
-      <div class="row">
-        <h3 class="white-text">Your Ingredients</h3>
-        <h6 class="red-text text-lighten-4">Click on an ingredient to remove from the list</h6>
-      </div>
-      
-      <div class="row">
-        <ul class="grey-text text-lighten-2 ing-list" id="ing-list">
-
-        </ul>
-      </div>
-    </div>
-
-    <!-- Recipe Options goes here below -->
-    <div class="container orange lighten-5 center" id="OptionsRecipe">
-      <div class="row">
-        <form>
-          <div class="row">
+      <!-- Search/Type in ingredients for list generation -->
+      <div class="container blue lighten-5 z-depth-3 center-align rcorners" id="OptionsRecipe">
+        <div class="row">
+          <form id="ing-form">
+            <h3 class="col s12 m6">What ingredients do you have at home?</h3>
             <div class="input-field col s12 m6">
-              <input placeholder="0" id="recipe-number" type="text" class="validate center">
-              <label for="recipe-number">How Many Recipes to generate.</label>
+              <input id="ing-text" type="text" class="ing-text">
+              <label class="black-text" for="ing-text" id="ing-text">Enter Your Ingredient Here</label>
             </div>
-
-            <label class="switch s12 m6" for="myIngCheck">Minimize Missing Ingredients</label>
-            <div class="switch s12 m6">
-              <label>
-                Off
-                <input type="checkbox" class="myIngCheck" checked="checked">
-                <span class="lever"></span>
-                On
-              </label>
-            </div>
-          </div>
-        </form>
-        <button class="btn s12 m4" id="get-recipes" type="submit">Show me the Recipes!</button>
-      </div>
-    </div>
-
-    <!-- Recipe list goes here, with image or link to relocate page -->
-    <div class="container row col s12 center" id="ListRecipe"></div>
-    <div class="container row center recipe-results"></div> 
-
-  </main>
-
-  <!-- Footer goes here  Below-->
-  <footer class="center-align indigo lighten-4">
-      <div class="row">
-        <div class="col s12">
-          <div clas="right hide-on-med-and-down">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-          </div>
+          </form>
         </div>
       </div>
 
-      <div class="center-align indigo lighten-3">
-        <p class="hide-on-small-and-down">© 2022 Copyright, Made with 🤍 by Edwin, Andrew, Rachel, Allyson, Sean</p>
+      <!-- List of ingredients generated via JavaScript from search input -->
+      <div class="container pink darken-4 z-depth-3 center rcorners">
+        <div class="row">
+          <h3 class="white-text">Your Ingredients</h3>
+          <h5 class="white-text">Click on an ingredient to remove from the list</h5>
+        </div>
+        
+        <div class="row">
+          <ul class="grey-text text-lighten-2 ing-list" id="ing-list">
+
+          </ul>
+        </div>
       </div>
-  </footer>
 
-</body>
+      <!-- Recipe Options goes here below -->
+      <div class="container red accent-4 z-depth-3 center rcorners" id="OptionsRecipe">
+        <div class="row">
+          <form>
+            <div class="row">
+              <div class="input-field col s12 m6">
+                <input placeholder="0" id="recipe-number" type="text" class="validate center">
+                <label class="white-text" for="recipe-number">How Many Recipes to generate.</label>
+              </div>
 
-    <!-- Link to JavaScript libraries below -->
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+              <label class="switch s12 m6 white-text" for="myIngCheck">Minimize Missing Ingredients</label>
+              <div class="switch s12 m6">
+                <label class="white-text">
+                  Off
+                  <input type="checkbox" class="myIngCheck" checked="checked">
+                  <span class="lever"></span>
+                  On
+                </label>
+              </div>
+            </div>
+          </form>
+          <button class="btn s12 m4" id="get-recipes" type="submit">Show me the Recipes!</button>
+        </div>
+      </div>
+
+      <!-- Recipe list goes here, with image or link to relocate page -->
+      <div class="container row col s12 center" id="ListRecipe"></div>
+      <div class="container row center recipe-results"></div> 
+
+    </main>
+
+    <!-- Footer goes here  Below-->
+    <footer class="center-align indigo darken-4">
+        <div class="row">
+          <div class="col s12">
+            <div clas="right hide-on-med-and-down">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-instagram"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="center-align indigo darken-3">
+          <p class="hide-on-small-and-down indigo-text text-lighten-5">© 2022 Copyright, Made with 🤍 by Edwin, Andrew, Rachel, Allyson, Sean</p>
+        </div>
+    </footer>
+
+  </body>
+
+  <!-- Link to JavaScript libraries below -->
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 
 
 </html>
