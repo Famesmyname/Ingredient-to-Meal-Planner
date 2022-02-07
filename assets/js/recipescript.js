@@ -53,14 +53,14 @@ function showIngredients(data) {
     ingList.innerHTML = "";
     ingredients = data.extendedIngredients.map(item => item.name);
     console.log(ingredients)
-    // for (var i = 0; i < cities.length; i++) {
-    //   var city = cities[i]
-    //   var button = document.createElement("button");
-    //   button.classList.add('city-btn')
-    //   button.classList.add('btn')
-    //   button.textContent = city;
-    //   cityList.appendChild(button);
-    // }
+    for (var i = 0; i < ingredients.length; i++) {
+      var ingredient = ingredients[i]
+      var amznLink = document.createElement("a");
+      a.classList.add('amz-link')
+      a.classList.add('btn')
+      a.textContent = city;
+      cityList.appendChild(button);
+    }
   }
 
 // Image of recipe
