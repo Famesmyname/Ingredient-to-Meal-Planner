@@ -1,5 +1,3 @@
-/// JAVASCRIPT FOR RECIPE.HTML
-
 // Define all DOM elements here
 var getReturnBtn = document.querySelector('#returnBtn')
 const choiceRecipe = document.querySelector('#recipe-choice');
@@ -7,8 +5,10 @@ const myIngredients = document.querySelector('#ingredients');
 const myTasteDescrip = document.querySelector('#taste-descrip');
 const myNutrition = document.querySelector("#nutritionFacts");
 const sourceUrl = document.querySelector('#sourceUrl'); 
+const recipeCode = document.querySelector('#recipeCode'); 
 
 var recipes = [];
+
 recipeCode = JSON.parse(localStorage.getItem("recipeCode"))
 
 // ?&apiKey=5f7f6407a3df426fb065f2211ab36e41
