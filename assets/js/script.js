@@ -137,15 +137,8 @@ document.querySelector('.recipe-results').addEventListener('click', function(eve
 })
 
 // Sidenav
-// var instance = M.Sidenav.getInstance(elem);
-// instance.open();
-// instance.close();
+var elem = document.querySelector('.sidenav');
+var instance = new M.Sidenav(elem);
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     var elems = document.querySelectorAll('.sidenav');
-//     var instances = M.Sidenav.init(elems, options);
-//     var collapsibleElem = document.querySelector('.collapsible');
-//     var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
-// });
-        
+
 init()
