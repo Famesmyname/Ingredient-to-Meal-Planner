@@ -22,12 +22,12 @@ The home screen is shown below:
 - Clicking on the card picture will bring up a slide in display showing how many ingredients that the recipe have missing from your ingredients list.
 - Clicking on the link will take the user to a new page with specific information about the recipe.
 
-
+![GIF Demo showing APP in action](./assets/screenshots/DEMO.gif)
 ## Created Using
 ```
 HTML
 CSS
-JavaScript (& JQuery)
+JavaScript
 MATERIALIZE
 
 ```
