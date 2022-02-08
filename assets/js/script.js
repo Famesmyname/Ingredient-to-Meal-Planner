@@ -133,5 +133,10 @@ document.querySelector('.recipe-results').addEventListener('click', function(eve
 var elem = document.querySelector('.sidenav');
 var instance = new M.Sidenav(elem);
 
+var dropdowns = document.querySelectorAll('.dropdown-trigger')
+for (let i = 0; i < dropdowns.length; i++) {
+  M.Dropdown.init(dropdowns[i]);
+}
+
 
 init()
