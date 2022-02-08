@@ -114,8 +114,7 @@ function generateRecipe(data){
           <div class="name-card card-reveal flow-text">
             <span class="recipe-title flow-text card-title grey-text text-darken-4">${result.title}<i class="material-icons right">X</i></span>
             <h5 class="currentRecipeIngredient">Missing Ingredients: <span class="missingIng">${result.missedIngredientCount}</span></h5>
-            // <h6> Recipe Code: </h6>
-            // <h6 class="recipe-code">${result.id}</h6>
+            <h6 class="recipe-code">${result.id}</h6>
           </div>
         </div>
     </div>

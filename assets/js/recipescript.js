@@ -64,6 +64,7 @@ function showIngredients(data) {
     }
   }
 
+fetchRecipe()
 // Image of recipe
 // data.image 
 
