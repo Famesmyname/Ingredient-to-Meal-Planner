@@ -123,7 +123,6 @@ padding-left: 1rem;
   border: black 1px solid;
 }
 
-<<<<<<< HEAD
 .amzn-link {
   font-size: 1.5rem !important;
 }
@@ -144,16 +143,6 @@ padding-left: 1rem;
     margin: 0px;
   }
 
-=======
-/* Bottom margin to space containers */
-.bottom-margin {
-  margin-bottom: 20px;
-}
-
-/* footer padding */
-footer {
-  padding-top: 10px;
->>>>>>> 933ec9745fea35f2cdd43acc852f003049996627
 }
 
 /*  Sidenav */
