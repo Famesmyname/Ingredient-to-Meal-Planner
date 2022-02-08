@@ -41,7 +41,7 @@ function showRecipeData(data) {
     document.querySelector('.recipeImg').src = image
     document.querySelector('.summary').innerHTML = summary
     document.querySelector('.serving').innerText = servingWeight + 'g'
-    document.querySelector('.calories').innerText = calories + 'g'
+    document.querySelector('.calories').innerText = calories + ' cal'
     document.querySelector('.carbs').innerText = carbs + 'g'
     document.querySelector('.fat').innerText = fat + 'g'
     document.querySelector('.protein').innerText = protein + 'g'
@@ -56,10 +56,11 @@ function showIngredients(data) {
     for (var i = 0; i < ingredients.length; i++) {
       var ingredient = ingredients[i]
       var amznLink = document.createElement("a");
-      a.classList.add('amz-link')
-      a.classList.add('btn')
-      a.textContent = city;
-      cityList.appendChild(button);
+      amznLink.href = `https://www.amazon.com/gp/search?ie=UTF8&tag=ingredient2me-20&linkCode=ur2&linkId=d1d269c3ab069e4c87b38e0412adacd3&camp=1789&creative=9325&index=grocery&keywords=${ingredient}`
+      amznLink.target = "_blank"
+      amznLink.classList.add('amz-link')
+      amznLink.textContent = ingredient;
+      ingList.appendChild(amznLink);
     }
   }
 
