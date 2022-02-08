@@ -7,16 +7,11 @@ const ingredientInput = document.querySelector("#ing-text");
 const ingredientForm = document.querySelector("#ing-form");
 const ingredientList = document.querySelector("#ing-list");
 
-
 var ingredients = [];
 let recipeCode = ""
 
-
-
 //API INFO HERE
 // const APIKEY = '5f7f6407a3df426fb065f2211ab36e41'
-
-
 
 // Event Listeners Here
 
@@ -132,7 +127,6 @@ function generateRecipe(data){
 document.querySelector('.recipe-results').addEventListener('click', function(event){
     var element = event.target
     recipeCode = element.getAttribute("datarecipecode")
-    console.log(recipeCode)
     localStorage.setItem("recipeCode", JSON.stringify(recipeCode));
 })
 

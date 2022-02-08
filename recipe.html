@@ -9,7 +9,9 @@
 
     <!-- Link to CSS below -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- Add icon library -->
@@ -50,14 +52,18 @@
         <div class="col s12">
           <div class="card">
             <div class="card-image">
-              <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2020%2F09%2F17%2Fcream-tomato-rigatoni-FT-RECIPE1020.jpg">
-              <span class="card-title black">Recipe Name</span>
+              <img class="recipeImg" alt="A link to the recipe image" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2020%2F09%2F17%2Fcream-tomato-rigatoni-FT-RECIPE1020.jpg">
+              <span class="card-title black recipe-name">Recipe Name</span>
             </div>
             <div class="card-content center" id="ingredients">
-                <p>Ingredients</p></div>
+              <p>Ingredients</p>
+              <ul class="ing-list">
+              </ul>
+            </div>
   
-                <div class="card-content center" id="taste-descrip">
-                  <p>Taste Description: ex. Sweet</p>
+                <div class="card-content center flow-text" id="taste-descrip">
+                  <p class="summary flow-text">Taste Description: ex. Sweet</p>
+                  <a href="" class="sourceUrl">Link to Original Recipe</a>
   
               </div>
             </div>
@@ -73,30 +79,30 @@
         <thead>
           <tr>
               <th>Nutrition Facts</th>
-            <th>Serving Size: 2 cups <br>8 servings per recipe</th>
+            <th>Serving Size: <span class="serving">2 cups</span></th>
           </tr>
         </thead>
 
         <tbody>
           <tr>
             <td>Calories</td>
-            <td>210 cal</td>
+            <td class="calories">210 cal</td>
           </tr>
           <tr>
             <td>Total Carbohydrate</td>
-            <td>24g</td>
+            <td class="carbs">24g</td>
           </tr>
           <tr>
             <td>Total Sugars</td>
-            <td>7g</td>
+            <td class="sugar">7g</td>
           </tr>
           <tr>
             <td>Protein</td>
-            <td>3g</td>
+            <td class="protein">3g</td>
           </tr>
           <tr>
             <td>Total Fat</td>
-            <td>8g</td>
+            <td class="fat">8g</td>
           </tr>
         </tbody>
       </table>
@@ -104,11 +110,11 @@
       </div>
     </div>
 
-    <div class="container row col s12 m6" id="recipeCode">
+    <div class="container row col s12 m6">
         <div class="col s12">
           <div class="card">
             <div class="card-content center">
-                <a href="" id="sourceUrl"></a>
+                <a class="" href="" id=""></a>
                 <!-- <p>Source Url</p> -->
                 </div>
                 </div>
@@ -150,7 +156,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
-    <script src="./assets/js/script.js"></script>
+    <!-- <script src="./assets/js/script.js"></script> -->
     <script src="./assets/js/recipescript.js"></script>
  
 
