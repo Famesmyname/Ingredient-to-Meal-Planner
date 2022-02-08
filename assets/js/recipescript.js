@@ -54,11 +54,13 @@ function showIngredients(data) {
     ingredients = data.extendedIngredients.map(item => item.name);
     console.log(ingredients)
     for (var i = 0; i < ingredients.length; i++) {
-      var ingredient = ingredients[i]
+      var ingredient = ingredients[i].toUpperCase()
       var amznLink = document.createElement("a");
       amznLink.href = `https://www.amazon.com/gp/search?ie=UTF8&tag=ingredient2me-20&linkCode=ur2&linkId=d1d269c3ab069e4c87b38e0412adacd3&camp=1789&creative=9325&index=grocery&keywords=${ingredient}`
       amznLink.target = "_blank"
-      amznLink.classList.add('amz-link')
+      amznLink.classList.add('amzn-link')
+      amznLink.classList.add('col')
+      amznLink.classList.add('s4')
       amznLink.textContent = ingredient;
       ingList.appendChild(amznLink);
     }

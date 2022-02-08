@@ -102,6 +102,14 @@ padding-left: 1rem;
   font-size: 1rem;
 }
 
+.recipe-name {
+  font-size: 2rem !important;
+  display: flex;
+  flex-direction: column;
+  background: rgba(26, 26, 26, 0.3);
+  border-radius: 10px;
+}
+
 .img-adjust {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -113,6 +121,15 @@ padding-left: 1rem;
   border-radius: 25px;
   padding: 5px;
   border: black 1px solid;
+}
+
+.amzn-link {
+  font-size: 1.5rem !important;
+}
+
+.amzn-link:hover {
+    background-color: cyan;
+
 }
 
 /*  Sidenav */
