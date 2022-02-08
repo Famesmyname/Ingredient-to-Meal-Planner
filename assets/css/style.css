@@ -19,6 +19,10 @@ main {
   padding-top: 25px;
 }
 
+.container {
+  margin-top: 10px
+}
+
 .ing-list li {
 font-size: 20px;
 padding-left: 1rem;
@@ -90,7 +94,7 @@ padding-left: 1rem;
 }
 
 .recipe-card {
-   height: 20rem;
+   height: 22rem;
    border-radius: 10px;
 }
 
