@@ -115,6 +115,16 @@ padding-left: 1rem;
   border: black 1px solid;
 }
 
+/* Bottom margin to space containers */
+.bottom-margin {
+  margin-bottom: 20px;
+}
+
+/* footer padding */
+footer {
+  padding-top: 10px;
+}
+
 /*  Sidenav */
 /* main {
   padding-left: 100px;
