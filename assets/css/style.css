@@ -146,20 +146,6 @@ padding-left: 1rem;
 }
 
 /*  Sidenav */
-.homepage:hover {
-  background-color: #92A9BD;
-  color: #3B5998;
-}
-
-.ingredients:hover {
-  background-color: #92A9BD;
-  color: #3B5998;
-}
-
-.recipes:hover {
-  background-color: #92A9BD;
-  color: #3B5998;
-}
 /* main {
   padding-left: 100px;
 }

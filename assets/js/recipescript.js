@@ -72,8 +72,7 @@ fetchRecipe()
 var dropdowns = document.querySelectorAll('.dropdown-trigger')
 for (let i = 0; i < dropdowns.length; i++) {
   M.Dropdown.init(dropdowns[i]);
-} 
-
+}
 // Image of recipe
 // data.image 
 
