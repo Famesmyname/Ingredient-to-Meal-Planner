@@ -7,6 +7,8 @@ Access this useful app at: https://famesmyname.github.io/Ingredient-to-Meal-Plan
 
 ## Instructions
 
+### Home Page
+
 The home screen is shown below:
 
 ![Screenshot of home screen](./assets/screenshots/screenshot_index.png)
@@ -18,36 +20,42 @@ The home screen is shown below:
 
 ![Screenshot of recipes cards after a search](./assets/screenshots/screenshot_recipe_cards.png)
 
+
+
 - The recipe cards will show the name of the recipe and have a link to the recipe information.
 - Clicking on the card picture will bring up a slide in display showing how many ingredients that the recipe have missing from your ingredients list.
 - Clicking on the link will take the user to a new page with specific information about the recipe.
 
+
 ![GIF Demo showing APP in action](./assets/screenshots/DEMO.gif)
+
+### Recipe Page
+
+- For the recipe page, the recipe and image are show at the top of the page.
+- Underneath is the ingredients list with link to Amazon to purchse the ingredients if needed.
+- The links help monetize the page as we (Ingredient2MealARESA on Amazon) get a portion of the procedes if a purchase is made.
+- At the bottom of the page is the nutritional facts for the recipe chosen.
+
+![Screenshot of recipes cards after a search](./assets/screenshots/screenshot_recipe.png)
+
+
+
+
 ## Created Using
 ```
 HTML
 CSS
 JavaScript
 MATERIALIZE
+Spoonacular API
+Amazon.com
 
-```
-## User Story
-```
-USER wants to keep a list of ingredients they have available.
-SO that USER can SEARCH for recipes that use listed ingredients.
-GIVEN a list of ingredients that can be modified.
-WHEN USER hits search recipes,
-THEN USER is presented with a list of recipes.
-WHEN USER chooses to only use ingredients owned,
-THEN USER is only shown recipes that include their ingredients.
-WHEN USER chooses to search recipes that contain one or some of my ingredients,
-THEN USER is given a list of recipes that use one or some of my ingredients
-WHEN USER clicks on the recipe,
-THEN USER is relocated to new PAGE,
-THAT displays recipe, picture of the recipe, and link to a video of the recipe. 
-```
-## Link to Wireframe
+``
 
-<https://www.figma.com/file/JBhmALuGcD5XSOHTivgOtD/Ingredient-To-Meal-Planner?node-id=0%3A1>
+## Credits
 
-## Rachel branch test 
+Allyson Vitug
+Rachel Marron
+Andrew Ngo
+Edwin Fame
+Sean Lee
